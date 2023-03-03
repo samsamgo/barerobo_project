@@ -12,10 +12,6 @@ function Transaction({ type, balance, onComplete }) {
     setAmount(amount + digit);
   };
 
-  const handleXlick = () => {
-    setAmount("");
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     if (isNaN(amount)) {
