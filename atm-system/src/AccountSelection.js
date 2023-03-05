@@ -60,7 +60,7 @@ const AccountSelectiondiv = styled.div`
     right: 50px;
     bottom: 50px;
     margin-top: auto;
-    width: 300px;
+    width: 500px;
     height: 70px;
     border-radius: 30px;
     border: 5px solid rgba(135, 206, 235, 0.8);

@@ -15,11 +15,12 @@ function Transaction({ type, balance, onComplete }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (isNaN(amount)) {
-      alert("Please enter a valid amount.");
+      alert("금액을 선택해 주세요.");
     } else if (type === "withdraw" && amount > balance) {
-      alert("Insufficient funds.");
+      alert("잔액이 부족합니다.");
+      window.location.reload();
     } else if (amount <= 0) {
-      alert("Please enter a valid amount.");
+      alert("금액을 선택해 주세요.");
     } else {
       onComplete(amount);
     }
